@@ -8,6 +8,7 @@
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -124,6 +125,11 @@
         linear-gradient(150deg, var(--base) 50%, var(--shadow) 50%, var(--base-dark) 53%) 0px 90px/ 151px 90px no-repeat,
         linear-gradient(148.7deg, transparent 50%, var(--shadow) 50%, var(--base) 51%) 150px 0px/ 150px 90px no-repeat;
     }
+
+    .message{
+      font-family: 'Dancing Script', cursive;
+      font-size:medium;
+    }
   </style>
 </head>
 
@@ -178,8 +184,8 @@
       ease: "back.out(0.4)",
       translateY: -5,
       translateZ: 250,
-      width: 420,
-      height: 300
+      width: 700,
+      height: 510
     });
 
     let t2 = gsap.timeline({ paused: true }); 
