@@ -12,10 +12,10 @@
 
   <style>
     :root {
-      --base: #D98F00;
-      --base-light: #FFB74D;
-      --base-dark: #C66900;
-      --shadow: #A65F00;
+      --base: #68999f;
+      --base-light: #4f7276;
+      --base-dark: #68999f;
+      --shadow: #056c6c;
       --letter: #FFF8E1;
     }
 
@@ -39,16 +39,16 @@
 
     .content {
       position: relative;
-      perspective: 600px;
+      perspective: 60vw;
     }
 
     .shadow {
       position: absolute;
-      width: 200px;
-      height: 1px;
+      width: 41.67vw; /* 200px */
+      height: 0.1vh;
       background: transparent;
       border-radius: 30%;
-      box-shadow: 50px 100px 10px 5px #eeeef3;
+      box-shadow: 0vw 4vh 0.7vh 0.5vh #eeeef3; /* 50px 100px 10px 5px */
     }
 
     .letter {
@@ -56,16 +56,16 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 280px;
-      height: 160px;
+      width: 19.44vw; /* 280px */
+      height: 15.75vh; /* 160px */
       display: flex;
       align-items: center;
       justify-content: center;
       z-index: 15;
-      border-radius: 10px;
+      border-radius: 0.69vw; /* 10px */
       background: var(--letter);
-      box-shadow: 0px 1px 7px -1px var(--base);
-      padding: 10px;
+      box-shadow: 0 0.098vh 0.689vh -0.098vh #D98F00;
+      padding: 0.69vh; /* 10px */
       transform-origin: center center;
       overflow: hidden;
     }
@@ -74,17 +74,17 @@
       position: relative;
       width: 100%;
       height: 100%;
-      color: var(--base);
-      font-size: 8px; /* small font, constant */
+      color: #D98F00;
+      font-size: 0.79vh; /* 8px */
       line-height: 1.4;
       overflow-y: auto;
     }
 
     .letter .body .close {
       position: absolute;
-      right: 5px;
+      right: 0.35vw; /* 5px */
       top: 0;
-      font-size: 18px;
+      font-size: 1.77vh; /* 18px */
       font-weight: bold;
       cursor: pointer;
       user-select: none;
@@ -92,9 +92,9 @@
 
     .envelope {
       position: relative;
-      width: 600px; 
-      height: 360px; 
-      background: linear-gradient(#cccbd7 0.5px, var(--base-light) 0.5px);
+      width: 41.67vw; /* 600px */
+      height: 40vh; /* 360px */
+      background: linear-gradient(#cccbd7 0.05vh, var(--base-light) 0.05vh);
       cursor: pointer;
     }
 
@@ -103,12 +103,12 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 600px;  
-      border-top: 230px solid #7873A7;
-      border-left: 300px solid transparent;
-      border-right: 300px solid transparent;
+      width: 41.67vw;
+      border-top: 22.64vh solid #056c6c; /* 230px */
+      border-left: 20.83vw solid transparent; /* 300px */
+      border-right: 20.83vw solid transparent;
       box-sizing: border-box;
-      z-index: 30; 
+      z-index: 30;
       transform-origin: top;
     }
 
@@ -116,19 +116,20 @@
       content: '';
       position: absolute;
       top: 0;
-      width: 600px; 
-      height: 360px; 
+      width: 41.67vw;
+      height: 40vh;
       z-index: 25;
       background: 
-        linear-gradient(30deg, var(--base-dark) 47%, var(--shadow) 50%, var(--base) 50%) 300px 180px/ 300px 180px no-repeat,
-        linear-gradient(31deg, var(--base) 49%, var(--shadow) 50%, transparent 50%) 0px 0px/ 304px 180px no-repeat,
-        linear-gradient(150deg, var(--base) 50%, var(--shadow) 50%, var(--base-dark) 53%) 0px 180px/ 302px 180px no-repeat,
-        linear-gradient(148.7deg, transparent 50%, var(--shadow) 50%, var(--base) 51%) 300px 0px/ 300px 180px no-repeat;
+        linear-gradient(30deg, var(--base-dark) 47%, var(--shadow) 50%, var(--base) 50%) 20.83vw 20vh/ 20.83vw 20vh no-repeat,
+        linear-gradient(31deg, var(--base) 49%, var(--shadow) 50%, transparent 50%) 0 0/ 21.11vw 20vh no-repeat,
+        linear-gradient(150deg, var(--base) 50%, var(--shadow) 50%, var(--base-dark) 53%) 0 20vh/ 20.97vw 20vh no-repeat,
+        linear-gradient(148.7deg, transparent 50%, var(--shadow) 50%, var(--base) 51%) 20.83vw 0/ 20.83vw 20vh no-repeat;
     }
 
-    .message{
+    .message {
       font-family: 'Dancing Script', cursive;
-      font-size:medium;
+      font-size: 1.6vh;
+      color: ;
     }
   </style>
 </head>
@@ -146,7 +147,7 @@
             In your class, we grew in more ways than we expected to. Your class gave us more than just knowledge and introduction to programming; it taught us other lessons that go hand in hand with software development, and most importantly it gave us confidence. Whether it was standing in front of the class for a presentation or simply expressing an idea clearly or developing a program geared towards user appeal, you helped us find and chase perfection. You made it feel okay to make mistakes, to stumble a bit, and then get back up with a laugh and keep going.<br><br>
             You always had a way of turning everyday moments into life lessons, little pieces of advice that stuck with us long after class ended. And that’s something we’ll carry forward, wherever we go.<br><br>
             Thank you for being the kind of teacher who truly sees your students and marks them based on how they have improved throughout the course. Thank you for encouraging us, challenging us, and showing us what it means to develop, not only in programming, but also as a person.<br><br>
-            You’ve made a difference, and we're really grateful we got to be in your class.<br><br>
+            You’ve made a difference in us no other teacher has, and we're really grateful we got to be in your class.<br><br>
             Sincerely,<br>
             Zhen and Girish
           </div>
@@ -172,7 +173,7 @@
       }
     })
     .to('.letter', {
-      translateY: -200,
+      y: '-19.69vh', // ~200px
       duration: 0.9, 
       ease: "back.inOut(1.5)"
     })
@@ -182,31 +183,23 @@
     .to('.letter', {
       duration: 1,  
       ease: "back.out(0.4)",
-      translateY: -5,
-      translateZ: 250,
-      width: 700,
-      height: 510
+      y: '-0.49vh', // ~5px
+      z: '24.63vw',   // ~250px
+      width: '48.61vw', // ~700px
+      height: '50.20vh' // ~510px
     });
 
     let t2 = gsap.timeline({ paused: true }); 
-    t2.to('.shadow', {
-      delay: 1.4,
-      width: 420,
-      boxShadow: "-65px 135px 10px 5px #eeeef3",
-      ease: "back.out(0.2)",
-      duration: 0.7
-    }); 
 
-    function openCard(e) {
+    function openCard() {
       t1.restart();
       t2.restart();
     }
 
-    function closeCard(e) {
+    function closeCard() {
       t1.reverse();
       t2.reverse();
     }
   </script>
 </body>
 </html>
-
